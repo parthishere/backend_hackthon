@@ -19,4 +19,4 @@ def register(request):
         email_from = "parththakkar1674@gmail.com"
         recipient_list = [email]
         send_mail(subject, message, email_from, recipient_list)
-    return Response({""})
+    return Response({"ok":True})
