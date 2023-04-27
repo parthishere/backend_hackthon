@@ -14,7 +14,7 @@ def register(request):
         template = render_to_string('email_template.html', {'username': username, 'email': email,
                                    "phonenumber":phone_number})
 
-        subject = "Registred for FacIt !"
+        subject = "Registred for lakshya !"
         message = template
         email_from = "parththakkar1674@gmail.com"
         recipient_list = [email]
