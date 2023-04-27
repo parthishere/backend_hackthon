@@ -11,7 +11,7 @@ def register(request):
     username = request.POST.get("name")
     phone_number = request.POST.get("phone_number")
     if email:
-        template = render_to_string('email_template.html', {'username': username, 'email': email,
+        template = render_to_string('email_templates.html', {'username': username, 'email': email,
                                    "phonenumber":phone_number})
 
         subject = "Registred for lakshya !"
